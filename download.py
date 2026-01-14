@@ -22,7 +22,6 @@ def download(tag, sequences, path):
 def download_file(url, path):
     local_filename = url.split('/')[-1]
     local_filename = os.path.join(path, local_filename)
-    # NOTE the stream=True parameter below
     with requests.get(url, stream=True) as r:
         r.raise_for_status()
         with open(local_filename, 'wb') as f:
