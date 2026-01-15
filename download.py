@@ -41,7 +41,6 @@ def unzip_all(base_path, delete_zip=True):
                     os.system(f"rm {os.path.join(root, file)}")
 
 if __name__ == "__main__":
-    #baseurl = "https://web.archive.org/web/20220210102816/http://cvlab.hanyang.ac.kr/tracker_benchmark/"
     baseurl = "https://web.archive.org/web/http://cvlab.hanyang.ac.kr/tracker_benchmark/"
     OTB50_seq_names = []
     OTB100_seq_names = []
